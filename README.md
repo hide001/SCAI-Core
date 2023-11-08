@@ -20,8 +20,8 @@ To back the Latest blockchain you can become a validator. Full flow to become a 
 * Install this package **([See Installation](#installation))**
 * Download your newly created validator wallet from your server and import it into your metamask or preferred wallet. Fund this account with the appropriate Latest coin needed to become a validator. Example command to download the wallet on your local PC. Only works for UNIX-based OSes or on any environment that can run the OpenSSH package:
 ```bash
-  scp -r root@<server_ip>:/root/core-blockchain/chaindata/node1/keystore
-  scp root@<server_ip>:/root/core-blockchain/chaindata/node1/pass.txt
+  scp -r root@<server_ip>:/root/SCAI-Core/chaindata/node1/keystore
+  scp root@<server_ip>:/root/SCAI-Core/chaindata/node1/pass.txt
 ```
 * On your server, start the node that you just installed **([See Usage/Example](#usageexamples))**
 * Once the node is started and confirmation is seen on your terminal, open the interactive console by attaching tmux session **([See Usage/Example](#usageexamples))**
@@ -51,7 +51,7 @@ Connect again to your server after reboot
 ```bash
   sudo -i
   git clone https://github.com/SecureChainAI/SCAI-Core.git
-  cd core-blockchain
+  cd SCAI-Core
   ./node-setup.sh --validator 1
 ```
 After you run node-setup, follow the on-screen instructions carefully and you'll get confirmation that the node was successfully installed on your system.
